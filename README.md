@@ -18,6 +18,29 @@ B.  AttackStrategy
      1.  CastSpell
      2.  ShootArrow
      3.  SwingSword  
+	 
+UML Diagram
+<img width="1377" height="566" alt="image" src="https://github.com/user-attachments/assets/af87375d-2efb-4002-98df-e31b3f4aadc0" />
+
+Problem scenario:
+
+Suppose we have three types of characters in a GameApp:
+
+1. Knight: Attacks with a sword; uses 3 strategies to defend (shield, dodge, magic barrier)
+2. Wizard: Casts spells; uses magic barrier to defend
+3. Archer: Shoots arrows; uses dodge to to defend
+
+Implement two types of Strategy:
+A.  DefenseStrategy
+     1. Shield
+     2. Dodge
+     3. CreateMagic
+
+B.  AttackStrategy
+     1.  CastSpell
+     2.  ShootArrow
+     3.  SwingSword  
+
 
 Refactor the existing codes and provide the UML Diagram:
 
@@ -50,7 +73,11 @@ public class Character {
             System.out.println("Using a shield to defend!"");
         }
     }
-
-    
 }
+
+
+
+
+	 	
+
 
